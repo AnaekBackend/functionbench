@@ -1,0 +1,31 @@
+{
+  "set_light": {
+    "arguments": {
+      "room": ["bedroom", "living_room", "kitchen"],
+      "state": ["on", "off"],
+      "brightness": {"type": "int", "min": 0, "max": 100}
+    },
+    "required": ["room", "state", "brightness"]
+  },
+  "set_fan": {
+    "arguments": {
+      "room": ["bedroom", "living_room", "kitchen"],
+      "state": ["on", "off"],
+      "speed": {"type": "int", "min": 1, "max": 5}
+    },
+    "required": ["room", "state", "speed"]
+  },
+  "set_temperature": {
+    "arguments": {
+      "room": ["bedroom", "living_room", "kitchen"],
+      "value": {"type": "int", "min": 15, "max": 30}
+    },
+    "required": ["room", "value"]
+  },
+  "ask_clarify": {
+    "arguments": {
+      "reason": ["missing_room", "ambiguous_device", "out_of_scope", "conflicting_request"]
+    },
+    "required": ["reason"]
+  }
+}

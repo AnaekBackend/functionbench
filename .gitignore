@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Cursor IDE local project files
+.cursor/
+
+# Generated reports
+report.json
+*.report.json
