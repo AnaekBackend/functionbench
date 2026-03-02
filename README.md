@@ -2,6 +2,26 @@
 
 Reliability benchmark for tool-using LLMs.
 
+LLMs can emit valid JSON and still fail at tool use in production-critical ways:
+
+- Invent tools that do not exist
+- Drop required arguments
+- Call a tool when they should ask for clarification
+- Break under boundary and instruction-injection style prompts
+
+FunctionBench measures these failure modes explicitly so you can compare models on reliability, not just JSON validity.
+
+It helps you:
+
+- Compare base models on the same dataset/tool schema
+- See dominant error types instead of a single blended score
+- Pick the model closest to production readiness
+- Measure reliability lift after prompt tuning or fine-tuning
+
+Example output:
+
+![FunctionBench CLI output with category-level and failure-code metrics](terminal-output.png)
+
 ## Installation
 
 From GitHub:
