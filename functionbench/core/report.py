@@ -8,6 +8,7 @@ from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 
+from functionbench.core.failure_taxonomy import normalize_failure_code
 from functionbench.core.scoring import CategoryMetrics, Metrics
 
 # Short labels for failure codes (for table column)
@@ -101,7 +102,8 @@ def print_console_report(
         for code in sorted(metrics.failure_counts.keys()):
             count = metrics.failure_counts[code]
             pct = 100.0 * count / total if total else 0
-            label = FAILURE_LABELS.get(code, code.replace("_", " ").title())
+            canonical = normalize_failure_code(code)
+            label = FAILURE_LABELS.get(canonical, canonical.replace("_", " ").title())
             rate_str = f"{pct:.1f}%"
             if use_color:
                 if pct == 0:

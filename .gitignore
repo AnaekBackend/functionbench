@@ -15,3 +15,9 @@ wheels/
 # Generated reports
 report.json
 *.report.json
+
+# Local/generated datasets (do not commit)
+data/enriched_*.jsonl
+data/simple_dataset*.jsonl
+data/*_with_probes*.jsonl
+data/my_dataset*.jsonl

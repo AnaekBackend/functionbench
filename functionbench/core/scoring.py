@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass, field
 
-from functionbench.core.failure_taxonomy import FailureCode
+from functionbench.core.failure_taxonomy import FailureCode, normalize_failure_code
 from functionbench.models.interfaces import DatasetCase, EvalResult
 
 
@@ -66,11 +66,20 @@ def compute_metrics(
     """Compute global and per-category metrics from results and original cases."""
     case_by_id = {c.id: c for c in cases}
     total = len(results)
+    protocol_failures = {
+        FailureCode.F8_NOT_JSON.value,
+        FailureCode.F9_JSON_PARSE_ERROR.value,
+        FailureCode.F10_PROTOCOL_BREAK.value,
+    }
+    json_failures = {
+        FailureCode.F8_NOT_JSON.value,
+        FailureCode.F9_JSON_PARSE_ERROR.value,
+    }
     exact_match_count = sum(1 for r in results if r.passed)
     json_valid_count = sum(
         1
         for r in results
-        if not any(f in (FailureCode.F8_NOT_JSON, FailureCode.F9_JSON_PARSE_ERROR) for f in r.failures)
+        if not any(normalize_failure_code(f) in json_failures for f in r.failures)
     )
 
     # Strict protocol pass: no F8/F9/F10 failures on call_tool cases.
@@ -80,7 +89,7 @@ def compute_metrics(
         case = case_by_id.get(r.case_id)
         if case and case.expected_behavior == "call_tool":
             if not any(
-                f in (FailureCode.F8_NOT_JSON, FailureCode.F9_JSON_PARSE_ERROR, FailureCode.F10_PROTOCOL_BREAK)
+                normalize_failure_code(f) in protocol_failures
                 for f in r.failures
             ):
                 strict_protocol_pass_count += 1
@@ -91,7 +100,8 @@ def compute_metrics(
     failure_counts: dict[str, int] = {}
     for r in results:
         for f in r.failures:
-            failure_counts[f] = failure_counts.get(f, 0) + 1
+            norm = normalize_failure_code(f)
+            failure_counts[norm] = failure_counts.get(norm, 0) + 1
 
     by_category: dict[str, CategoryMetrics] = {}
     for r in results:
@@ -103,10 +113,11 @@ def compute_metrics(
         cm.total += 1
         if r.passed:
             cm.exact_match += 1
-        if not any(f in (FailureCode.F8_NOT_JSON, FailureCode.F9_JSON_PARSE_ERROR) for f in r.failures):
+        if not any(normalize_failure_code(f) in json_failures for f in r.failures):
             cm.json_valid += 1
         for f in r.failures:
-            cm.failure_counts[f] = cm.failure_counts.get(f, 0) + 1
+            norm = normalize_failure_code(f)
+            cm.failure_counts[norm] = cm.failure_counts.get(norm, 0) + 1
 
     return Metrics(
         total_cases=total,

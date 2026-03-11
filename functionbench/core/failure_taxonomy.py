@@ -51,3 +51,20 @@ BEHAVIORAL_FAILURES = frozenset(
         FailureCode.F14_OVERREACH_ON_AMBIGUITY,
     }
 )
+
+
+def normalize_failure_code(code: str | FailureCode) -> str:
+    """
+    Normalize a failure code to canonical value form, e.g. "F1_TOOL_HALLUCINATION".
+
+    Accepts:
+    - FailureCode enum values
+    - Canonical strings
+    - Legacy "FailureCode.F1_TOOL_HALLUCINATION" string form
+    """
+    if isinstance(code, FailureCode):
+        return code.value
+    text = str(code)
+    if text.startswith("FailureCode."):
+        return text.split(".", 1)[1]
+    return text

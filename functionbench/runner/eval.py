@@ -3,6 +3,7 @@
 import argparse
 import importlib
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -144,6 +145,12 @@ def main() -> int:
         return 1
 
     protocol_mode = ProtocolMode(args.protocol)
+    if args.model == "lmstudio_model:lmstudio_callable" and not os.environ.get("FUNCTIONBENCH_TOOLS_JSON"):
+        print(
+            "Warning: FUNCTIONBENCH_TOOLS_JSON is not set; lmstudio_model may hallucinate/wrong-tool more often "
+            "without explicit tool schema context.",
+            file=sys.stderr,
+        )
 
     try:
         results, cases, _, detailed_rows = run_evaluation(

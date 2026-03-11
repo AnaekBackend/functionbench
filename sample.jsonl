@@ -11,3 +11,763 @@
 {"input": "there's no light in the kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
 {"input": "I need it on in bedroom, thanks", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
 {"input": "there's no light in bedroom right now", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "my kitchen lights at 31 percent", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 31}}}
+{"input": "alright, set temperature to 22", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "I'd like you to the lounge is hot", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "alright, switch off the master bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "maintain the master bedroom at 26 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "I need it on in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "set front room fan speed to 5, please", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 5}}}
+{"input": "yo, need some air in living room!", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "yo, start the bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "I want my kitchen fan at level 1", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 1}}}
+{"input": "turn on my bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "activate the lounge fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "Master bedroom fan speed 5", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "Bedroom fan at speed 4", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 4}}}
+{"input": "front room temperature 30", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 30}}}
+{"input": "can you set the living room temperature to 24", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 24}}}
+{"input": "okay, switch the the master bedroom lights on", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "so I'm cold, set temp to 20", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "increase front room temperature", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "um, switch off the family room fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "hey, set bedroom alarm!", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "the bedroom fan is too loud right now", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "hey there, Turn on the lounge lights at 84%", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 84}}}
+{"input": "can you dim lights and increase fan speed in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "um, bedroom lights on and kitchen fan off", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "heat the bedroom to 21", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 21}}}
+{"input": "turn on lounge fan at speed 1", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 1}}}
+{"input": "yo, lights on and fan off in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "can you illuminate my bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "start the living room fan now", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "can you kill the kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "the bedroom should be at 26 thank you", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "maintain living room at 28 degrees asap", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "I'm going to sleep in master bedroom!", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "power on my kitchen lights, please", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "need some air in my bedroom please", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "done with my bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "it's too cold in the bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "keep the kitchen at 20", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 20}}}
+{"input": "kill the the kitchen fan, thanks", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "set temperature to 22", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "okay, set the master bedroom fan speed to 5 asap", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "bedroom fan speed 1 for me", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 1}}}
+{"input": "Turn on the lights in the living room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "set the family room fan to speed 5", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 5}}}
+{"input": "yo, no more lights in the kitchen?", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "leaving the master bedroom now", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "please kitchen fan off thanks", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "make my bedroom brighter", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "please turn off the fan in the kitchen", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "set kitchen fan speed to 4 for me", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 4}}}
+{"input": "i want the family room to be 29 asap", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 29}}}
+{"input": "okay, slow down my kitchen fan", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "leaving kitchen now", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "um, My bedroom lights on", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "29 degrees in the family room right now", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 29}}}
+{"input": "um, don't need the my kitchen fan anymore", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "turn it off", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "can you turn on the lights in the bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "maintain the kitchen at 20 degrees asap", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 20}}}
+{"input": "the master bedroom is hot", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "start laundry", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "I want kitchen at 20 degrees will you", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 20}}}
+{"input": "cool the lounge to 23", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 23}}}
+{"input": "it's stuffy in my kitchen", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "dim my bedroom lights to 83%", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 83}}}
+{"input": "hey, play some music please", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "switch on kitchen fan?", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "alright, set the living room lights to 35%?", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 35}}}
+{"input": "cool the kitchen to 20", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 20}}}
+{"input": "please start laundry please", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "keep the bedroom at 21", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 21}}}
+{"input": "so shut off the kitchen lights right now", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "there's no light in my kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "thermostat the family room 26", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 26}}}
+{"input": "Order pizza right now", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "hey, disable master bedroom lighting", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "the bedroom should be at 20", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 20}}}
+{"input": "turn on kitchen fan at speed 4", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 4}}}
+{"input": "alright, kitchen thermostat to 22 for me", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 22}}}
+{"input": "could you the lounge should be at 17", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 17}}}
+{"input": "would you run kitchen fan at 4", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 4}}}
+{"input": "turn on all the lights and fans", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "alright, I can't see anything in my bedroom asap", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "hey, switch off the kitchen fan right now", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "dim lounge lights to 48%", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 48}}}
+{"input": "alright, Lights off in master bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "my bedroom should be at 23", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 23}}}
+{"input": "switch the my kitchen lights on", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "Master bedroom should be at 30", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "Order pizza", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "yo, living room fan on at speed 4 and lights at 50%", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "please maintain kitchen at 21 degrees.", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 21}}}
+{"input": "adjust kitchen lighting to 37 asap", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 37}}}
+{"input": "activate master bedroom fan asap", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "it's dark in the kitchen, turn on the lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "heat kitchen to 27 thank you", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 27}}}
+{"input": "run the master bedroom fan at 5 thank you", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "master bedroom thermostat to 29 will you", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 29}}}
+{"input": "heat the master bedroom to 20 now", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 20}}}
+{"input": "adjust the lounge lighting to 41", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 41}}}
+{"input": "turn up my kitchen fan please", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "The kitchen fan at speed 4 thank you", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 4}}}
+{"input": "bedroom needs light", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "turn on living room fan and kitchen lights", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "lock the front door thanks", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "keep the living room at 22", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 22}}}
+{"input": "I don't need the fan in the master bedroom anymore asap", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "please turn off the lights in the lounge", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "set the temperature in master bedroom to 30", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "dim living room lights to 73%, thanks", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 73}}}
+{"input": "too windy in master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "a bit brighter in kitchen", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "dim the master bedroom lights", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "can you set kitchen temp to 22 degrees!", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 22}}}
+{"input": "yo, Living room needs light", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "yo, too windy in my kitchen", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "start bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "hey, I need to see in the kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "Power on the family room lights", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "the kitchen thermostat to 16", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 16}}}
+{"input": "okay, dim bedroom lights to 14% for me", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 14}}}
+{"input": "turn off the master bedroom lights now", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "I want kitchen lights at 37%, please", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 37}}}
+{"input": "would you I can't see anything in my kitchen?", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "yo, please set the kitchen to 23 degrees?", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 23}}}
+{"input": "can you adjust living room to 24", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 24}}}
+{"input": "I'm done with lights in the kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "i need bedroom to be 22 degrees right now", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 22}}}
+{"input": "increase kitchen temperature", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "master bedroom temperature 30", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "Illuminate master bedroom!", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "please turn off the family room fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "it's dark in kitchen, turn on the lights?", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "please set my bedroom to 26 degrees?", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "thermostat the master bedroom 24 thanks", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 24}}}
+{"input": "Turn on the lights in kitchen please", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "my kitchen is pitch black", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "um, turn on the lights in lounge", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "master bedroom lights on?", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "keep bedroom at 30 will you", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "would you need some air in the living room", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "yo, Lights off", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "thermostat the living room 28, please", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "Turn off the lounge fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "don't need the my kitchen fan anymore", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "can you SHUT OFF FRONT ROOM LIGHTS will you", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "I need lights in my kitchen?", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "switch on bedroom light.", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "don't need the bedroom fan anymore", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "the family room is pitch black", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "power on master bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "please front room fan on, thanks", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "can you I'm sweating in lounge", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "please turn off the kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "the family room temperature 19", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 19}}}
+{"input": "29 degrees in the bedroom", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 29}}}
+{"input": "turn on the TV", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "um, make bedroom 20 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 20}}}
+{"input": "okay, set the kitchen temperature to 24, please", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 24}}}
+{"input": "alright, thermostat my kitchen 30", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 30}}}
+{"input": "can you set the my kitchen temperature to 25", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 25}}}
+{"input": "Turn on the kitchen lights at 12%", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 12}}}
+{"input": "could you increase fan speed", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "turn off my bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "shut it off in kitchen", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "too bright in kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "so it's dark in the bedroom, turn on the lights, please", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "turn off the fan", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "can you set the the bedroom temperature to 20", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 20}}}
+{"input": "bedroom fan speed 4 thanks", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 4}}}
+{"input": "set my kitchen brightness to 70 right now", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 70}}}
+{"input": "I want the kitchen to be 19", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 19}}}
+{"input": "would you fan on in kitchen!", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "please Can you turn on the lights in the family room thanks", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "set the kitchen lights to 28%.", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 28}}}
+{"input": "it's dark in the lounge", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "um, please turn on the kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "hey there, change kitchen temperature to 19 please", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 19}}}
+{"input": "yo, Switch on the master bedroom light thanks", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "too bright in master bedroom right now", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "alright, turn off the living room lights", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "there's no light in my bedroom please", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "there's no light in lounge", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "um, need some air in the master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "there's no light in the living room thanks", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "please I need the lounge to be 21 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 21}}}
+{"input": "it's dark in the living room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "it's too cold in the master bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "would you increase the lounge brightness for me", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "I'd like you to need some air in bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "I need kitchen to be 22 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 22}}}
+{"input": "so keep the lounge at 21 will you", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 21}}}
+{"input": "order pizza, please", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "I'm cold, set temp to 20", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "set bedroom brightness to 59 thank you", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 59}}}
+{"input": "could you switch off kitchen fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "could you set the my bedroom fan to 2", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 2}}}
+{"input": "please Too windy in bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "lights on in front room, please", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "done with the family room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "please set the family room to 17 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 17}}}
+{"input": "vacuum the living room", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "alright, stop the master bedroom fan right now", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "decrease the bedroom temperature will you", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "alright, change front room temperature to 26", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 26}}}
+{"input": "okay, adjust bedroom to 16!", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 16}}}
+{"input": "okay, play some music", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "could you turn on bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "okay, there's no light in the lounge", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "Set bedroom temp to 29 degrees for me", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 29}}}
+{"input": "um, the lounge temperature 20", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 20}}}
+{"input": "okay, adjust the bedroom lighting to 8 thank you", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 8}}}
+{"input": "okay, please turn on the master bedroom fan?", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "it's stuffy in front room", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "please turn off the my bedroom lights", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "um, lights on", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "hey there, play podcast in kitchen", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "adjust bedroom lighting to 86 thanks", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 86}}}
+{"input": "hey there, Switch on lounge fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "make my kitchen 18% bright please", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 18}}}
+{"input": "turn on the oven.", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "please set the kitchen lights to 7%", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 7}}}
+{"input": "Cool family room to 28 thanks", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "switch on living room TV please", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "can you lights on and fan off in bedroom please", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "please turn on bedroom lights and set living room fan to 3", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "hey, I'm sweating in the lounge", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "play some music?", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "yo, can you turn on the fan in my bedroom?", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "the kitchen is hot", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "um, adjust front room to 25", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 25}}}
+{"input": "would you I NEED MORE LIGHT", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "could you switch the front room lights on", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "turn on the family room fan at speed 5", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 5}}}
+{"input": "um, The master bedroom fan at speed 2", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 2}}}
+{"input": "hey, Switch it off", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "I need family room to be 25 degrees!", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 25}}}
+{"input": "can you enable kitchen", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "adjust master bedroom to 20 thanks", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 20}}}
+{"input": "24 degrees in the kitchen please", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 24}}}
+{"input": "can you it's hot in master bedroom, turn on the fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "turn it on in the living room!", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "There's no light in bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "please Front room needs air circulation", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "MAKE MY KITCHEN 23 DEGREES", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 23}}}
+{"input": "maintain living room at 28 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "um, kitchen temperature 26", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 26}}}
+{"input": "turn on front room fan at speed 5", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 5}}}
+{"input": "could you Turn on the lights in kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "alright, kitchen brightness 77", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 77}}}
+{"input": "would you light up bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "alright, it's stuffy in the bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "set kitchen fan to speed 5", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 5}}}
+{"input": "please kitchen needs air circulation", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "make my bedroom 55% bright", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 55}}}
+{"input": "ADJUST THE BEDROOM LIGHTING TO 47", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 47}}}
+{"input": "lounge is too dark", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "set my bedroom temp to 21 degrees!", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 21}}}
+{"input": "I'd like you to set bedroom temp to 20 and living room to 24", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "hey there, please set living room to 17 degrees please", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 17}}}
+{"input": "so turn off the fan", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "hey, adjust bedroom lighting to 50!", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 50}}}
+{"input": "yo, lights on and fan off in bedroom right now", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "hey there, make the bedroom 26% bright", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 26}}}
+{"input": "can you start family room fan will you", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "would you family room fan speed 1 for me", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 1}}}
+{"input": "I need kitchen to be 20 degrees!", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 20}}}
+{"input": "can you bedroom lights to 80 and fan to speed 2!", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "set the kitchen light brightness to 6", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 6}}}
+{"input": "activate the bedroom fan.", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "fan on in kitchen please", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "I'd like you to maintain the kitchen at 17 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 17}}}
+{"input": "the master bedroom fan at speed 5", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "maintain master bedroom at 26 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "um, turn on bedroom lights and set living room fan to 3", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "the kitchen lights at 99 percent will you", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 99}}}
+{"input": "close the blinds", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "okay, switch it on", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "I want the bedroom lights at 35%", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 35}}}
+{"input": "bedroom temperature 19", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 19}}}
+{"input": "alright, maintain my kitchen at 26 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 26}}}
+{"input": "okay, 28 degrees in the living room", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "I'd like you to turn on the bedroom lights at 53%", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 53}}}
+{"input": "start kitchen", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "hey there, I'm done with lights in kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "could you Make kitchen 38% bright", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 38}}}
+{"input": "need some air in the master bedroom, thanks", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "hey, the family room fan speed 5", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 5}}}
+{"input": "Lights off in the master bedroom for me", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "can you the living room temperature 26?", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 26}}}
+{"input": "switch it on", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "done with the master bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "Thermostat the family room 25", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 25}}}
+{"input": "change lounge temperature to 27!", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 27}}}
+{"input": "turn on family room fan?", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "alright, set kitchen temperature to 17", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 17}}}
+{"input": "set alarm for 7am, thanks", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "turn on my kitchen lights at 57%", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 57}}}
+{"input": "yo, Turn on my kitchen fan at speed 1", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 1}}}
+{"input": "play music in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "set my kitchen lights to 50%", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 50}}}
+{"input": "um, too windy in living room?", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "hey, turn on kitchen fan at speed 1!", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 1}}}
+{"input": "hey, kitchen fan on", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "um, power on bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "set bedroom temperature to 27", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 27}}}
+{"input": "Please set lounge to 20 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 20}}}
+{"input": "set the my bedroom light brightness to 21", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 21}}}
+{"input": "activate lounge fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "so it's dark in living room thanks", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "could you Change the kitchen temperature to 27", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 27}}}
+{"input": "set master bedroom fan to speed 2", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 2}}}
+{"input": "would you water the plants please", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "master bedroom thermostat to 30 will you", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "hey there, Done with kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "would you set the temperature in bedroom to 22", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 22}}}
+{"input": "hey, adjust the kitchen to 23?", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 23}}}
+{"input": "cool bedroom to 29 thank you", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 29}}}
+{"input": "KILL THE BEDROOM LIGHTS", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "start the living room fan please", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "I'm going to sleep in the bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "the kitchen brightness 31 for me", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 31}}}
+{"input": "hey, Bedroom is too dark!", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "so start the coffee maker will you", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "hey there, Turn off the lights in my kitchen, please", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "set the front room light brightness to 65 will you", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 65}}}
+{"input": "fan off in the lounge", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "could you I need my kitchen to be 18 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 18}}}
+{"input": "change the living room temperature to 19", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 19}}}
+{"input": "could you set front room fan to speed 2", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 2}}}
+{"input": "so can you set the family room temperature to 28 asap", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "lower kitchen temperature", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "set kitchen fan speed to 2", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 2}}}
+{"input": "would you can you turn on the lights in the master bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "Dim the lights", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "turn on the fan, please", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "I want the bedroom lights at 79% will you", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 79}}}
+{"input": "run my bedroom fan at 5", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "don't need the the kitchen fan anymore now", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "hey there, start kitchen!", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "yo, bedroom lights off", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "yo, enable kitchen?", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "cool living room to 24!", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 24}}}
+{"input": "26 degrees in my kitchen", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 26}}}
+{"input": "yo, lower bedroom temperature", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "It's dark in the master bedroom, turn on the lights thank you", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "I'd like you to too bright in kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "the lounge should be at 26 thank you", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 26}}}
+{"input": "adjust kitchen lighting to 81", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 81}}}
+{"input": "disable lounge lighting thanks", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "ACTIVATE FRONT ROOM FAN", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "so A bit brighter in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "can you Turn it off", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "hey there, change my kitchen temperature to 25 for me", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 25}}}
+{"input": "I'm sweating in my bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "light up the lounge asap", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "I want the kitchen to be 21", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 21}}}
+{"input": "okay, disable the kitchen lighting", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "can you set the kitchen temperature to 30?", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 30}}}
+{"input": "so please turn off the kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "kill the living room lights", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "maintain bedroom at 25 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 25}}}
+{"input": "kitchen should be at 25", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 25}}}
+{"input": "yo, change kitchen temperature to 22", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 22}}}
+{"input": "yo, I need it on in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "hey there, lounge temperature 28", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "alright, switch on lounge fan, please", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "i need more light", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "I'd like you to I want kitchen at 24 degrees.", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 24}}}
+{"input": "um, front room should be at 19", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 19}}}
+{"input": "could you start bedroom fan now", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "my bedroom thermostat to 16", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 16}}}
+{"input": "um, turn off the fan in family room", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "hey there, set bedroom temp to 20 and living room to 24", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "reduce the master bedroom brightness", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "um, I want family room at 25 degrees, thanks", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 25}}}
+{"input": "i want living room at 18 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 18}}}
+{"input": "Please turn off the kitchen fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "Set bedroom lights to 34%", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 34}}}
+{"input": "make my bedroom warmer", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "please set family room to 16 degrees!", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 16}}}
+{"input": "can you turn off the fan in the living room", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "so set the the family room light brightness to 61", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 61}}}
+{"input": "could you i need lights in family room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "change living room temperature to 30", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 30}}}
+{"input": "Bedroom lights on and kitchen fan off", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "it's stuffy in lounge", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "would you turn on the lights in the bedroom, thanks", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "maintain the master bedroom at 23 degrees!", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 23}}}
+{"input": "hey there, less air in my bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "set the bedroom temperature to 19", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 19}}}
+{"input": "no more lights in my kitchen will you", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "I want my kitchen at 19 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 19}}}
+{"input": "power on bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "27 degrees in the family room", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 27}}}
+{"input": "change family room temperature to 29", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 29}}}
+{"input": "alright, turn on the TV?", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "the lounge fan at speed 4", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 4}}}
+{"input": "hey, set kitchen temperature to 22 and turn off bedroom lights please", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "I need master bedroom to be 20 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 20}}}
+{"input": "the kitchen lights at 87 percent now", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 87}}}
+{"input": "keep family room at 21", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 21}}}
+{"input": "keep the bedroom at 24", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 24}}}
+{"input": "lights off in the family room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "so master bedroom temperature 26", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "can you disable the bedroom lighting.", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "turn on the dishwasher?", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "can you turn off the lights in master bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "yo, start living room fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "alright, turn on bedroom lights and turn off kitchen lights, please", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "would you kill the the master bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "kitchen lights on", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "okay, kitchen fan at speed 5 thanks", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 5}}}
+{"input": "kitchen fan speed 5 thanks", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 5}}}
+{"input": "the kitchen needs air circulation", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "I want the kitchen at 30 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 30}}}
+{"input": "hey there, kitchen fan off", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "could you Set kitchen temperature to 17", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 17}}}
+{"input": "Master bedroom needs light", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "cool kitchen to 30", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 30}}}
+{"input": "cool the kitchen to 25", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 25}}}
+{"input": "NEED SOME AIR IN THE FAMILY ROOM", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "hey, heat family room to 25", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 25}}}
+{"input": "cool the lounge to 19", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 19}}}
+{"input": "hey there, no more lights in the living room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "can you turn on my kitchen lights at 60%!", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 60}}}
+{"input": "I'd like you to I need kitchen to be 17 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 17}}}
+{"input": "hey there, I want the bedroom at 25 degrees.", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 25}}}
+{"input": "set front room brightness to 57", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 57}}}
+{"input": "can you power on bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "would you I'm done with lights in bedroom thank you", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "yo, it's hot in the kitchen, turn on the fan thank you", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "hey, it's hot in master bedroom, turn on the fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "I want the master bedroom at 30 degrees right now", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "please cool the kitchen to 20", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 20}}}
+{"input": "done with the bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "would you turn on the fan in the kitchen", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "so lounge fan off", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "could you please turn off the my bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "illuminate the kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "my bedroom should be at 30", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "so switch on my kitchen fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "would you need some air in family room now", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "um, disable my bedroom lighting thanks", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "okay, make the living room 59% bright?", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 59}}}
+{"input": "enable the kitchen lighting asap", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "Please turn off the my kitchen fan right now", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "so can you set the the lounge temperature to 23", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 23}}}
+{"input": "living room temperature 23", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 23}}}
+{"input": "I want my kitchen fan at level 2?", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 2}}}
+{"input": "make bedroom 18 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 18}}}
+{"input": "lounge should be at 24", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 24}}}
+{"input": "Can you turn on the lights in living room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "turn on bedroom thanks", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "I'd like you to thermostat my kitchen 27", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 27}}}
+{"input": "Switch off family room fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "could you kitchen lights on thanks", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "I want the master bedroom to be 22?", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 22}}}
+{"input": "please can you set the the master bedroom temperature to 26", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "please shut off the family room lights thank you", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "set the living room brightness to 15?", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 15}}}
+{"input": "turn on bedroom lights and set living room fan to 3", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "could you can you turn off the lights in living room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "turn off the lights in the family room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "22 degrees in family room", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 22}}}
+{"input": "unlock bedroom door right now", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "can you set the family room fan to 1 now", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 1}}}
+{"input": "I don't need the fan in master bedroom anymore", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "turn on bedroom lights and turn off kitchen lights", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "Switch it off?", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "I'd like you to Don't need the master bedroom fan anymore", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "set my bedroom brightness to 72 thank you", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 72}}}
+{"input": "alright, start my bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "run my kitchen fan at 4 thank you", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 4}}}
+{"input": "don't need the kitchen fan anymore.", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "hey there, the kitchen thermostat to 19", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 19}}}
+{"input": "hey, the lounge temperature 26", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 26}}}
+{"input": "alright, can you turn off the fan in the kitchen?", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "I need my kitchen to be 27 degrees for me", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 27}}}
+{"input": "can you it's too cold", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "okay, my kitchen is pitch black", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "Can you turn off the lights in kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "okay, I want the kitchen to be 28, please", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 28}}}
+{"input": "can you done with living room will you", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "I'd like you to shut it off in kitchen", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "thermostat master bedroom 26, thanks", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "no more lights in the bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "kill the the bedroom fan for me", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "i don't need the fan in the family room anymore", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "thermostat the kitchen 18", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 18}}}
+{"input": "could you unlock bedroom door now", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "keep the bedroom at 26", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "activate the bedroom fan for me", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "hey there, Lounge should be at 26", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 26}}}
+{"input": "I want living room lights at 25%", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 25}}}
+{"input": "yo, Maintain living room at 30 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 30}}}
+{"input": "I need the kitchen to be 19 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 19}}}
+{"input": "slow down my kitchen fan", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "set the the master bedroom fan to 2", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 2}}}
+{"input": "so fan off in the living room", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "family room brightness 85", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 85}}}
+{"input": "kill the kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "I want master bedroom at 30 degrees will you", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 30}}}
+{"input": "set the temperature in kitchen to 24", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 24}}}
+{"input": "turn on bedroom fan at speed 4, thanks", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 4}}}
+{"input": "a bit brighter in master bedroom will you", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "make the bedroom fan faster", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "Set family room lights to 9%", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 9}}}
+{"input": "it's stuffy in master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "can you please set my kitchen to 16 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 16}}}
+{"input": "turn on lights please", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "dim my bedroom lights", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "I'd like you to it's hot in lounge, turn on the fan now", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "switch on master bedroom light.", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "the lounge is pitch black", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "raise the master bedroom temperature", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "turn off the fan in the kitchen.", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "set the family room light brightness to 39", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 39}}}
+{"input": "keep front room at 19", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 19}}}
+{"input": "stop living room fan right now", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "can you the lounge temperature 16", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 16}}}
+{"input": "um, heat my kitchen to 21", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 21}}}
+{"input": "set bedroom fan speed to 5", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "alright, I need family room to be 24 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 24}}}
+{"input": "yo, Lights on in the bedroom thanks", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "would you it's dark in my kitchen, turn on the lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "done with living room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "open kitchen window", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "I want kitchen at 26 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 26}}}
+{"input": "don't need the living room fan anymore thanks", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "could you kitchen temperature 25 and fan speed 3, thanks", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "power on my bedroom fan will you", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "okay, adjust bedroom lighting to 96", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 96}}}
+{"input": "the family room lights on", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "dim my kitchen lights to 49%", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 49}}}
+{"input": "um, make kitchen 19 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 19}}}
+{"input": "set the family room light brightness to 89", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 89}}}
+{"input": "change living room temperature to 18", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 18}}}
+{"input": "no more lights in living room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "hey there, switch off the kitchen light", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "please turn off the the kitchen fan right now", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "so The lounge lights at 75 percent will you", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 75}}}
+{"input": "front room lights are still on!", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "hey, the lounge fan is too loud!", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "could you I need it on in bedroom now", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "can you can you set the the living room temperature to 22 will you", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 22}}}
+{"input": "yo, heat my bedroom to 21.", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 21}}}
+{"input": "adjust my bedroom lighting to 17", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 17}}}
+{"input": "I want the family room at 26 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 26}}}
+{"input": "can you turn off the fan in the master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "hey, it's hot in my kitchen, turn on the fan asap", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "please illuminate my kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "okay, set the kitchen brightness to 31", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 31}}}
+{"input": "I need kitchen to be 16 degrees", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 16}}}
+{"input": "can you it's stuffy in the master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "please set bedroom to 27 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 27}}}
+{"input": "thermostat the bedroom 18", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 18}}}
+{"input": "please I need the fan in the master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "I'd like you to Maintain the family room at 28 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "yo, switch it off", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "cool bedroom to 18", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 18}}}
+{"input": "please make kitchen brighter, please", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "please thermostat the kitchen 21", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 21}}}
+{"input": "set the master bedroom fan speed to 2 thanks", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 2}}}
+{"input": "set kitchen temperature to 22 and turn off bedroom lights", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "Make the master bedroom 28 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 28}}}
+{"input": "make the living room cooler asap", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "Turn on the dishwasher asap", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "I'd like you to switch off the kitchen fan please", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "yo, switch on my kitchen light", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "can you light up the master bedroom?", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "can you living room thermostat to 21", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 21}}}
+{"input": "living room lights off for me", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "Kill the my kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "illuminate the master bedroom.", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "it's cold in lounge with the fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "alright, run living room fan at 2 will you", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 2}}}
+{"input": "Turn on my bedroom fan at speed 1", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 1}}}
+{"input": "Increase my kitchen fan speed", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "Keep kitchen at 20 please", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 20}}}
+{"input": "keep the master bedroom at 18", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 18}}}
+{"input": "alright, SET TEMPERATURE TO 22 EVERYWHERE", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "start master bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "I'd like you to I can't see anything in bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "my kitchen fan is too loud", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "a bit brighter in the master bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "Turn on the lounge lights at 5%", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 5}}}
+{"input": "set the kitchen fan speed to 1", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 1}}}
+{"input": "set the family room light brightness to 98", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 98}}}
+{"input": "please it's dark in the family room, turn on the lights", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "would you I'm going to sleep in my kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "lock the front door", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "enable the family room lighting", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "Turn off the lights in the master bedroom thanks", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "disable the kitchen lighting, please", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "living room fan on at speed 4 and lights at 50%", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "hey, the family room is hot please", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "could you Set the temperature in lounge to 21", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 21}}}
+{"input": "okay, I'm going to sleep in the bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "please close the blinds", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "family room lights off", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "set the bedroom light brightness to 93", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 93}}}
+{"input": "yo, please turn off the my bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "hey there, I want the family room at 27 degrees", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 27}}}
+{"input": "living room fan off", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "turn off the kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "can you stop kitchen fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "can you turn off the fan in kitchen", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "adjust kitchen to 27", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 27}}}
+{"input": "light up family room!", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "Don't need the the kitchen fan anymore", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "Run kitchen fan at 4 right now", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 4}}}
+{"input": "could you it's stuffy in my kitchen", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "change kitchen temperature to 19 please", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 19}}}
+{"input": "can you set bedroom fan to speed 5", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "please turn off the my bedroom fan", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "arm the security system", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "fan on right now", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "make the kitchen cooler thanks", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "so set lounge fan speed to 4", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 4}}}
+{"input": "um, my kitchen fan at speed 1", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 1}}}
+{"input": "SWITCH OFF MY KITCHEN LIGHT", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "Fan off in the master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "um, It's hot in master bedroom, turn on the fan asap", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "power on my kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "activate living room", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "I need bedroom to be 16 degrees?", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 16}}}
+{"input": "fan on in kitchen right now", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "I'd like you to adjust the family room to 25?", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 25}}}
+{"input": "it's dark in lounge", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "it's too hot in the lounge.", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "okay, set the temperature in the kitchen to 28", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 28}}}
+{"input": "hey there, living room fan on at speed 4 and lights at 50% thanks", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "hey there, Keep kitchen at 22 please", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 22}}}
+{"input": "yo, it's dark in kitchen, turn on the lights please", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "I want bedroom to be 29", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 29}}}
+{"input": "set the master bedroom light brightness to 90, please", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 90}}}
+{"input": "SET THE TEMPERATURE IN MY BEDROOM TO 16", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 16}}}
+{"input": "adjust my kitchen to 18!", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 18}}}
+{"input": "could you I'm going to sleep in front room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "yo, can you turn off the fan in the bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "could you can you turn it on in the bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "would you turn on the lights", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "can you bedroom lights on and kitchen fan off", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "okay, set temperature to 22 everywhere right now", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "Turn off the fan in master bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "hey, switch on the family room fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "fan on", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "my bedroom lights at 65 percent, please", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 65}}}
+{"input": "could you switch it off right now", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "set front room temperature to 25", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 25}}}
+{"input": "so activate living room.", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "I'd like you to set my bedroom lights to 47% thank you", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 47}}}
+{"input": "set brightness to 50", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "PLEASE SET LIVING ROOM TO 28 DEGREES", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "lights on and fan off in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "illuminate my kitchen thanks", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "turn on the TV right now", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "hey, Make the bedroom 28 degrees, please", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 28}}}
+{"input": "yo, kitchen temperature 25 and fan speed 3", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "lights on right now", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "switch on living room TV thank you", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "i'm sweating in bedroom", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "lights on in bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "so kitchen should be at 24", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 24}}}
+{"input": "run master bedroom fan at 4 thanks", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 4}}}
+{"input": "activate family room fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "power off living room?", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "make the kitchen cooler!", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "lights on in the master bedroom please", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "would you change lounge temperature to 28", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 28}}}
+{"input": "please dim the master bedroom lights now", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "um, turn down living room fan, please", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "could you don't need the the master bedroom fan anymore", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "off", "speed": 1}}}
+{"input": "can you turn off the lights in front room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "hey there, activate the living room fan", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "I want front room lights at 66%", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 66}}}
+{"input": "hey, it's hot in kitchen, turn on the fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "set fan speed to 3", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "okay, light up the bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "thermostat my bedroom 23", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 23}}}
+{"input": "cool my bedroom to 24", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 24}}}
+{"input": "the kitchen fan on please", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "change my kitchen temperature to 28 now", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 28}}}
+{"input": "set front room lights to 60% right now", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 60}}}
+{"input": "activate the master bedroom fan asap", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "hey there, please set the lounge to 18 degrees?", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 18}}}
+{"input": "alright, kitchen needs air circulation", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "set bedroom temp to 20 and living room to 24", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "i'm done with lights in master bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "so cool family room to 29", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 29}}}
+{"input": "alright, lights on and fan off in bedroom", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "change the kitchen temperature to 27 now", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 27}}}
+{"input": "so fan on", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "I need to see in family room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "it's dark in my kitchen, turn on the lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "Fan on in family room", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "adjust front room to 22?", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 22}}}
+{"input": "I'd like you to my bedroom is too dark", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "okay, make my bedroom fan faster", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "hey, done with master bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "set my kitchen brightness to 99 for me", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 99}}}
+{"input": "kitchen fan speed 1", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 1}}}
+{"input": "turn off the lounge fan, please", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "switch off the light", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "hey, switch on living room TV", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "Power on the kitchen fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "it's stuffy in living room", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 3}}}
+{"input": "turn off the kitchen fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "turn on family room fan at speed 5", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 5}}}
+{"input": "turn on the lights in bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "okay, I want my kitchen fan at level 4!", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 4}}}
+{"input": "would you i need my kitchen to be 17 degrees will you", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 17}}}
+{"input": "can you turn on the fan in kitchen", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "would you turn on the oven will you", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "so I want the master bedroom lights at 73%", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 73}}}
+{"input": "I want living room fan at level 4 for me", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 4}}}
+{"input": "I'd like you to I need lights in bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "okay, thermostat master bedroom 28 please", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 28}}}
+{"input": "okay, turn down kitchen fan", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "what's the weather like", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "can you turn on the lights in the kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 100}}}
+{"input": "turn it on right now", "output": {"name": "ask_clarify", "arguments": {"reason": "ambiguous_device"}}}
+{"input": "fan off in lounge", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "off", "speed": 1}}}
+{"input": "run the bedroom fan at 1", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 1}}}
+{"input": "please turn on the kitchen lights at 7%", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 7}}}
+{"input": "Adjust my kitchen lighting to 54", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "on", "brightness": 54}}}
+{"input": "can you can you set the the kitchen temperature to 29", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 29}}}
+{"input": "set the the lounge fan to 5, thanks", "output": {"name": "set_fan", "arguments": {"room": "living_room", "state": "on", "speed": 5}}}
+{"input": "Keep the kitchen at 23", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 23}}}
+{"input": "I need lights in the bedroom", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "on", "brightness": 100}}}
+{"input": "done with kitchen", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
+{"input": "it's hot in my kitchen, turn on the fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "I'd like you to it's hot in my kitchen, turn on the fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "I want master bedroom at 29 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 29}}}
+{"input": "increase fan speed", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "okay, set my kitchen fan speed to 2, please", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 2}}}
+{"input": "Kitchen fan off", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "off", "speed": 1}}}
+{"input": "would you Living room fan on at speed 4 and lights at 50%", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "the bedroom lights are still on for me", "output": {"name": "set_light", "arguments": {"room": "bedroom", "state": "off", "brightness": 0}}}
+{"input": "hey there, set the thermostat to 25?", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "start the coffee maker?", "output": {"name": "ask_clarify", "arguments": {"reason": "out_of_scope"}}}
+{"input": "would you make my bedroom 26 degrees!", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 26}}}
+{"input": "um, I'm done with lights in the family room", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "increase bedroom fan speed", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_value"}}}
+{"input": "heat front room to 19", "output": {"name": "set_temperature", "arguments": {"room": "living_room", "value": 19}}}
+{"input": "the family room lights at 12 percent", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 12}}}
+{"input": "maintain master bedroom at 28 degrees", "output": {"name": "set_temperature", "arguments": {"room": "bedroom", "value": 28}}}
+{"input": "um, activate my bedroom fan thank you", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 3}}}
+{"input": "would you set temp to 24 degrees now", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "bedroom fan speed 5", "output": {"name": "set_fan", "arguments": {"room": "bedroom", "state": "on", "speed": 5}}}
+{"input": "maintain kitchen at 28 degrees asap", "output": {"name": "set_temperature", "arguments": {"room": "kitchen", "value": 28}}}
+{"input": "no more lights in family room right now", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "off", "brightness": 0}}}
+{"input": "set all fans to speed 3", "output": {"name": "ask_clarify", "arguments": {"reason": "conflicting_request"}}}
+{"input": "please turn on the the kitchen fan", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "kitchen is hot, thanks", "output": {"name": "set_fan", "arguments": {"room": "kitchen", "state": "on", "speed": 3}}}
+{"input": "alright, I need to see in lounge", "output": {"name": "set_light", "arguments": {"room": "living_room", "state": "on", "brightness": 100}}}
+{"input": "would you turn off the fan thank you", "output": {"name": "ask_clarify", "arguments": {"reason": "missing_room"}}}
+{"input": "please turn off the my kitchen lights", "output": {"name": "set_light", "arguments": {"room": "kitchen", "state": "off", "brightness": 0}}}
