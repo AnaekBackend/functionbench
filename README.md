@@ -205,6 +205,58 @@ Three typical cases:
 
 4. **Customize** — Use `scripts/enrich_dataset.py` or `scripts/simple_to_dataset.py` as a starting point and adapt (e.g. with coding agents) to your schema or id scheme.
 
+### Recommended workflow for your own data
+
+1. **Decide your tool schema** (`tools.json`)
+   - Pick the set of tools you want to evaluate (names + argument keys/types/enums/ranges).
+   - Keep the schema stable while comparing models; otherwise results aren’t comparable.
+
+2. **Create a seed file** (simple I/O JSONL)
+   - One JSON object per line:
+     - `input`: user text
+     - `output`: `{ "name": "<tool_name>", "arguments": { ... } }` (or `ask_clarify` for clarification cases)
+   - This is the easiest format to author/collect/label.
+
+3. **Convert to FunctionBench format (no new rows)**
+
+```bash
+uv run python scripts/simple_to_dataset.py \
+  --input my_seed.jsonl \
+  --output data/dataset.jsonl
+```
+
+4. **Option A: grow into a larger, multi-category benchmark (adds rows)**
+
+```bash
+uv run python scripts/enrich_dataset.py \
+  --input my_seed.jsonl \
+  --tools data/tools.json \
+  --output data/my_benchmark.jsonl \
+  --target 2400 \
+  --seed 42
+```
+
+5. **Option B: keep size but add probe variants in-place (same row count)**
+
+```bash
+uv run python scripts/simple_to_dataset.py \
+  --input data/dataset.jsonl \
+  --output data/dataset_with_probes.jsonl \
+  --add-probes 0.2 \
+  --seed 42
+```
+
+6. **Run evaluation**
+
+```bash
+uv run fb-eval \
+  --dataset data/my_benchmark.jsonl \
+  --tools data/tools.json \
+  --model your_model_module:your_callable \
+  --output reports/report.json \
+  --protocol extract_json
+```
+
 ### Example metrics (dummy)
 
 Console summary (illustrative):
